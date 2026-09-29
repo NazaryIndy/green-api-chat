@@ -45,6 +45,11 @@ export const NewChatForm = ({ onCreateChat }: NewChatFormProps) => {
         autoComplete="tel"
         aria-label="Номер телефона получателя"
         value={phone}
+        onBeforeInput={(event) => {
+          if (event.data && !/[\d+()\s-]/.test(event.data)) {
+            event.preventDefault();
+          }
+        }}
         onChange={(event) => {
           setPhone(event.target.value);
 
