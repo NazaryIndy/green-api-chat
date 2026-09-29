@@ -32,7 +32,6 @@ export const ConnectForm = ({
         w-[min(380px,calc(100%_-_32px))]
         flex-col
         gap-3
-        mt-2
         rounded-[18px]
         border
         border-[#e6eaee]
