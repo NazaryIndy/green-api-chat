@@ -46,8 +46,8 @@ export const ChatSidebar = ({
         ${isChatOpen ? 'max-[700px]:hidden' : ''}
       `}
     >
-      <div className="flex h-16 shrink-0 items-center justify-between px-4">
-        <h2 className="m-0 text-[21px] font-semibold tracking-[-0.2px]">
+      <div className="flex h-16 min-w-0 shrink-0 items-center justify-between px-4">
+        <h2 className="m-0 min-w-0 truncate text-[21px] font-semibold tracking-[-0.2px]">
           Чаты
         </h2>
 

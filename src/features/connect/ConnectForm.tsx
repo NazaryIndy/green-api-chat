@@ -50,6 +50,7 @@ export const ConnectForm = ({
         value={idInstance}
         onChange={(event) => setIdInstance(event.target.value)}
         placeholder="idInstance"
+        disabled={isConnecting}
         className="
           min-h-11
           rounded-[11px]
@@ -73,6 +74,7 @@ export const ConnectForm = ({
         value={apiTokenInstance}
         onChange={(event) => setApiTokenInstance(event.target.value)}
         placeholder="apiTokenInstance"
+        disabled={isConnecting}
         className="
           min-h-11
           rounded-[11px]
