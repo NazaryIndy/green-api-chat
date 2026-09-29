@@ -69,6 +69,7 @@ export const ConnectForm = ({
       <input
         aria-label="apiTokenInstance"
         type="password"
+        autoComplete="off"
         value={apiTokenInstance}
         onChange={(event) => setApiTokenInstance(event.target.value)}
         placeholder="apiTokenInstance"
